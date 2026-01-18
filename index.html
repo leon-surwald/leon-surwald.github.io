@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MLCPartners</title>
     <style>
-        /* Full screen height and centering */
+        /* Full screen height and centering logic */
         html, body {
             height: 100%;
             margin: 0;
@@ -35,13 +35,19 @@
         p {
             color: #555;
             font-size: 1.2em;
-            margin: 0; /* Reset margins */
+            margin: 0;
         }
 
-        /* Specific styling for the contact line */
+        /* Styling for the italicized contact line */
         .contact-info {
             font-style: italic;
-            margin-top: 15px; /* Adds space between the two lines */
+            margin-top: 15px;
+        }
+
+        /* Specific styling for the email link */
+        .email-link {
+            color: inherit; /* Keeps the text color the same as the paragraph */
+            text-decoration: underline; /* Ensures the email is underlined */
         }
     </style>
 </head>
@@ -50,7 +56,9 @@
     <div class="content-box">
         <h1>MLCPartners</h1>
         <p>We partner with quality €0.5-2M EBITDA businesses in growing industries.</p>
-        <p class="contact-info">Reach out via marco@mlcpartners.de</p>
+        <p class="contact-info">
+            Reach out via <a href="mailto:marco@mlcpartners.de" class="email-link">marco@mlcpartners.de</a>
+        </p>
     </div>
 
 </body>
