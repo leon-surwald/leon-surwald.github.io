@@ -5,32 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MLCPartners</title>
     <style>
-        /* This ensures the container takes up the full screen height */
+        /* Full screen height and centering */
         html, body {
             height: 100%;
             margin: 0;
             font-family: sans-serif;
-            background-color: #ffffff; /* Light gray page background */
-        }
-
-        /* This is the magic that centers everything horizontally and vertically */
-        body {
+            background-color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        /* Styling for the rectangular box itself */
+        /* The rectangular box */
         .content-box {
-            background-color: #ffffff; /* White box */
-            padding: 40px 60px; /* Space inside the box */
-            border: 2px solid #333; /* A solid rectangular border */
-            text-align: center; /* Centers text inside the box */
-            max-width: 600px; /* Ensures it doesn't get too wide on large screens */
-            width: 75%; /* Ensures it looks good on mobile */
+            background-color: #ffffff;
+            padding: 40px 60px;
+            border: 2px solid #333;
+            text-align: center;
+            max-width: 600px;
+            width: 75%;
         }
 
-        /* Basic styling for the text */
         h1 {
             margin-top: 0;
             color: #222;
@@ -40,7 +35,13 @@
         p {
             color: #555;
             font-size: 1.2em;
-            margin-bottom: 0;
+            margin: 0; /* Reset margins */
+        }
+
+        /* Specific styling for the contact line */
+        .contact-info {
+            font-style: italic;
+            margin-top: 15px; /* Adds space between the two lines */
         }
     </style>
 </head>
@@ -49,7 +50,7 @@
     <div class="content-box">
         <h1>MLCPartners</h1>
         <p>We partner with quality €0.5-2M EBITDA businesses in growing industries.</p>
-        <p>Reach out via marco@mlcpartners.de</p>
+        <p class="contact-info">Reach out via marco@mlcpartners.de</p>
     </div>
 
 </body>
